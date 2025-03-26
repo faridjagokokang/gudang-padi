@@ -78,9 +78,9 @@
     color: white;
     font-weight: 400;
     background: #567bfb;
-    padding: 0.5em 0.5em;
+    padding: 1em 1em;
     border-radius: 40px;
-    margin: 1em 0;
+    margin: 0.5em 0;
     transition: 0.3s;
   }
   
@@ -90,9 +90,9 @@
     color: white;
     font-weight: 400;
     background: #567bfb;
-    padding: 0.5em 0.5em;
+    padding: 1em 1em;
     border-radius: 40px;
-    margin: 1em 0;
+    margin: 0.5em 0;
     transition: 0.3s;
   }
   
@@ -102,9 +102,9 @@
     color: white;
     font-weight: 400;
     background: #567bfb;
-    padding: 0.5em 0.5em;
+    padding: 1em 1em;
     border-radius: 40px;
-    margin: 1em 0;
+    margin: 0.5em 0;
     transition: 0.3s;
   }
 }
