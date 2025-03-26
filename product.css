@@ -71,4 +71,40 @@
   .flex-md-equal > * {
     flex: 1;
   }
+
+  .action-btn2 {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    background: #567bfb;
+    padding: 0.5em 1.5em;
+    border-radius: 60px;
+    margin: 1em 0;
+    transition: 0.3s;
+  }
+  
+  .action-btn3 {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    background: #567bfb;
+    padding: 0.5em 2em;
+    border-radius: 60px;
+    margin: 1em 0;
+    transition: 0.3s;
+  }
+  
+  .action-btn4 {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    background: #567bfb;
+    padding: 0.5em 1.5em;
+    border-radius: 60px;
+    margin: 1em 0;
+    transition: 0.3s;
+  }
 }
