@@ -1,320 +1,98 @@
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
-  <head><script src="../assets/js/color-modes.js"></script>
-
+  <head>
+    <script src="../assets/js/color-modes.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.122.0">
-    <title>Website tugas Alpro</title>
+    <title>Website Tugas Alpro</title>
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/product/">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Menambahkan CDN Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <link href="product.css" rel="stylesheet">
   </head>
   <body>
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
-      <symbol id="check2" viewBox="0 0 16 16">
-        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
-      </symbol>
-      <symbol id="circle-half" viewBox="0 0 16 16">
-        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
-      </symbol>
-      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
-        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
-        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
-      </symbol>
-      <symbol id="sun-fill" viewBox="0 0 16 16">
-        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
-      </symbol>
+      <!-- SVG code for icons here -->
     </svg>
 
-    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
-      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
-            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#sun-fill"></use></svg>
-            Light
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li>
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
-            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
-            Dark
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li>
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
-            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#circle-half"></use></svg>
-            Auto
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li><!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Biodata Saya - www.gudang-padi</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
-  <style>
-    body {
-      background: linear-gradient(to right, #e3f2fd, #ffffff);
-      font-family: 'Segoe UI', sans-serif;
-      transition: background 0.3s, color 0.3s;
-    }
-    body.dark {
-      background: #121212;
-      color: #f1f1f1;
-    }
-    .biodata-card {
-      border-radius: 20px;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-      transition: all 0.3s ease;
-      background-color: white;
-    }
-    body.dark .biodata-card {
-      background-color: #1e1e1e;
-    }
-    .biodata-card:hover {
-      transform: translateY(-5px);
-    }
-    .profile-img {
-      width: 100%;
-      height: auto;
-      border-radius: 20px;
-    }
-    .section-title {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .fade-in {
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeInUp 0.8s ease-in-out forwards;
-    }
-    @keyframes fadeInUp {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    .toggle-btn {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      z-index: 999;
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Toggle Dark Mode Button -->
-  <button class="btn btn-dark toggle-btn" onclick="toggleDarkMode()">
-    <i class="bi bi-moon-stars-fill"></i>
-  </button>
-
-  <!-- Toast Welcome -->
-  <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
-    <div id="welcomeToast" class="toast align-items-center text-bg-primary border-0" role="alert">
-      <div class="d-flex">
-        <div class="toast-body">👋 Selamat datang di biodata Farid!</div>
-        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
-      </div>
-    </div>
-  </div>
-
-  <div class="container py-5">
-    <div class="text-center mb-5">
-      <h1 class="fw-bold fade-in">👨‍💻 BIODATA DIRI</h1>
-      <p class="text-muted fade-in" style="animation-delay: 0.3s;">Halo! Perkenalkan saya Farid, web developer muda dari Jambi ✨</p>
-    </div>
-
-    <div class="card biodata-card p-4 fade-in" style="animation-delay: 0.6s;">
-      <div class="row g-4">
-        <div class="col-md-4 text-center">
-          <img src="butterfly.jpg" alt="Foto Farid" class="profile-img img-fluid">
-        </div>
-        <div class="col-md-8">
-          <h4 class="section-title"><i class="bi bi-person-circle text-primary"></i> Informasi Pribadi</h4>
-          <table class="table table-borderless mt-3">
-            <tr><th>Nama</th><td>: M. Farid Donovant</td></tr>
-            <tr><th>Tempat</th><td>: Jambi</td></tr>
-            <tr><th>Tgl. Lahir</th><td>: 07 Februari 2006</td></tr>
-            <tr><th>Agama</th><td>: Islam</td></tr>
-            <tr><th>Alamat</th><td>: Jl. Prabu Siliwangi Rt.10/Rw.00, Jambi Timur, Kota Jambi</td></tr>
-            <tr><th>Email</th><td>: ridd2all.done@gmail.com</td></tr>
-            <tr><th>No. HP</th><td>: <a href="https://wa.me/+6287755466436" class="btn btn-success btn-sm" target="_blank"><i class="bi bi-whatsapp"></i> WhatsApp</a></td></tr>
-            <tr><th>Website</th><td>: <a href="https://gudang-padi.vercel.app/" class="text-decoration-none" target="_blank">gudang-padi.vercel.app</a></td></tr>
-          </table>
+    <nav class="navbar navbar-expand-md bg-dark sticky-top border-bottom" data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand d-md-none" href="#">
+          <svg class="bi" width="24" height="24"><use xlink:href="#aperture"/></svg>
+          Aperture
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasLabel">Aperture</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav flex-grow-1 justify-content-between">
+              <li class="nav-item"><a class="nav-link" href="#">Beranda Utama</a></li>
+              <li class="nav-item"><a class="nav-link" href="bio.html">Biografi</a></li>
+              <li class="nav-item"><a class="nav-link" href="frame.html">Tugas</a></li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
+    </nav>
 
-    <div class="card biodata-card p-4 mt-4 fade-in" style="animation-delay: 0.9s;">
-      <h4 class="section-title"><i class="bi bi-mortarboard text-warning"></i> Pendidikan</h4>
-      <ul class="list-group list-group-flush mt-3">
-        <li class="list-group-item">2013 - 2018: SDN 197 Kota Jambi</li>
-        <li class="list-group-item">2018 - 2021: SMP N 12 Kota Jambi</li>
-        <li class="list-group-item">2021 - 2024: SMA N 2 Kroya</li>
-        <li class="list-group-item">2024 - Sekarang: Universitas Nahdlatul Ulama Al Ghazali</li>
-      </ul>
-    </div>
-
-    <div class="card biodata-card p-4 mt-4 fade-in" style="animation-delay: 1.2s;">
-      <h4 class="section-title"><i class="bi bi-tools text-danger"></i> Keahlian</h4>
-      <div class="row mt-3">
-        <div class="col-md-6">
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-          </ul>
+    <main>
+      <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary">
+        <div class="col-md-6 p-lg-5 mx-auto my-5">
+          <h1 class="fw-bold">Selamat datang di Website Tugas Alpro</h1>
+          <p class="lead text-muted mb-3">Website ini berfungsi sebagai platform untuk mengumpulkan dan menampilkan tugas-tugas saya di mata kuliah Alpro. Di sini, kamu bisa melihat berbagai tugas dan karya saya yang telah selesai.</p>
+          
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a href="frame.html" class="btn btn-primary btn-lg px-4 gap-3">Lihat Tugas</a>
+            <a href="bio.html" class="btn btn-outline-secondary btn-lg px-4">Tentang Saya</a>
+          </div>
         </div>
-        <div class="col-md-6">
-          <ul>
-            <li>PHP</li>
-            <li>CodeIgniter</li>
-            <li>Laravel</li>
-            <li>NodeJS</li>
-          </ul>
+        <div class="product-device shadow-sm d-none d-md-block"></div>
+        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+      </div>
+
+      <!-- New Section for Information -->
+      <div class="container py-5">
+        <h2 class="text-center mb-4">Tentang Website Ini</h2>
+        <p class="lead text-muted text-center mb-4">Website ini dirancang untuk memudahkan pengumpulan tugas-tugas saya selama mata kuliah Algoritma dan Pemrograman. Setiap tugas yang saya kerjakan akan diunggah ke dalam halaman ini untuk dapat diakses dengan mudah oleh dosen dan teman-teman.</p>
+      </div>
+    </main>
+
+    <footer class="container py-5">
+      <div class="row">
+        <div class="col-12 col-md">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
+          <small class="d-block mb-3 text-body-secondary">&copy; Copyright 2025 Farid</small>
         </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- JavaScript Interaktif -->
-  <script>
-    // Tampilkan toast saat load
-    window.onload = () => {
-      const toast = new bootstrap.Toast(document.getElementById('welcomeToast'));
-      toast.show();
-    };
-
-    // Dark Mode toggle
-    function toggleDarkMode() {
-      document.body.classList.toggle('dark');
-    }
-
-    // Fade-in saat scroll
-    const fadeEls = document.querySelectorAll('.fade-in');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.style.animationDelay = entry.target.style.animationDelay || "0s";
-          entry.target.classList.add('animate__animated');
-          entry.target.style.opacity = 1;
-          entry.target.style.transform = "translateY(0)";
-          observer.unobserve(entry.target);
-        }
-      });
-    }, {
-      threshold: 0.2
-    });
-
-    fadeEls.forEach(el => {
-      observer.observe(el);
-    });
-  </script>
-
-</body>
-</html>
-
-      </ul>
-    </div>
-
-    
-<svg xmlns="http://www.w3.org/2000/svg" class="d-none">
-  <symbol id="aperture" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
-    <circle cx="12" cy="12" r="10"/>
-    <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/>
-  </symbol>
-  <symbol id="cart" viewBox="0 0 16 16">
-    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-  </symbol>
-  <symbol id="chevron-right" viewBox="0 0 16 16">
-    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-  </symbol>
-</svg>
-
-<nav class="navbar navbar-expand-md bg-dark sticky-top border-bottom" data-bs-theme="dark">
-  <div class="container">
-    <a class="navbar-brand d-md-none" href="#">
-      <svg class="bi" width="24" height="24"><use xlink:href="#aperture"/></svg>
-      Aperture
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasLabel">Aperture</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav flex-grow-1 justify-content-between">
-          <li class="nav-item"><a class="nav-link" href="#">
-            <svg class="bi" width="24" height="24"><use xlink:href="#aperture"/></svg>
-          </a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Beranda utama</a></li>
-          <li class="nav-item"><a class="nav-link" href="bio.html">Biografi</a></li>
-          <li class="nav-item"><a class="nav-link" href="frame.html">Beranda tugas</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">
-            <svg class="bi" width="24" height="24"><use xlink:href="#cart"/></svg>
-          </a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</nav>
-
-<main>
-  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary">
-    <div class="col-md-6 p-lg-5 mx-auto my-5">
-      <h1 class="fw-bold">Website ini di buat oleh</h1>
-      <h2 class="fw-bold">M. Farid Donovant</h2>
-      <h2 class="fw-bold">24EO10021</h2>
-      <h2 class="fw-bold">Informatika</h2>
-      <h3 class="fw-normal text-muted mb-3">Website ini di buat untuk alat atau platform penumpulan tugas Alpro</h3>
-    </div>
-    <div class="product-device shadow-sm d-none d-md-block"></div>
-    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
-  </div>
-  
-</main>
-
-<footer class="container py-5">
-  <div class="row">
-    <div class="col-12 col-md">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
-      <small class="d-block mb-3 text-body-secondary">&copy; Copyright 2025 Farid</small>
-    </div>
-    <div class="col-6 col-md">
-      <h5 class="fw-bold flex-wrap">Kontak Person</h5>
-      <div class="footer">
-          <ul>
-            <li class="nav-item">
-              <img src="instagram.png" alt="" /><a href="https://www.instagram.com/fridd_lxyz1/=" class="action-btn1"><p>Instagram</p></a>
+        <div class="col-6 col-md">
+          <h5 class="fw-bold">Kontak Person</h5>
+          <ul class="list-unstyled">
+            <li class="nav-item mb-3">
+              <i class="fab fa-instagram fa-2x me-2"></i>
+              <a href="https://www.instagram.com/fridd_lxyz1/" class="text-decoration-none">Instagram</a>
+            </li>
+            <li class="nav-item mb-3">
+              <i class="fab fa-whatsapp fa-2x me-2"></i>
+              <a href="http://wa.me/+6287755466436" class="text-decoration-none">WhatsApp</a>
             </li>
             <li class="nav-item">
-              <img src="WhatsApp.png" alt="" /><a href="http://wa.me/+6287755466436" class="action-btn3"><p>WhatsApp</p></a>
-            </li>
-            <li class="nav-item">
-              <img src="telegram.png" alt="" /><a href="" class="action-btn4"><p>FaceBook</p></a>
+              <i class="fab fa-telegram fa-2x me-2"></i>
+              <a href="#" class="text-decoration-none">Telegram</a>
             </li>
           </ul>
+        </div>
       </div>
-      </ul>
-    </div>
-  </div>
-</footer>
+    </footer>
 
-    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
